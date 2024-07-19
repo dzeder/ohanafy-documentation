@@ -32,3 +32,10 @@ npm install node-quickbooks
 2. login with your ohanafy credentials
 3. select mappings between ohanafy and qbo
 4. click confirm
+
+
+## Step 4: Test
+1. Create an invoice in Ohanafy
+2. It syncs to QBO every 6 hours
+3. Check QBO that it synced correctly
+4. Get paid
