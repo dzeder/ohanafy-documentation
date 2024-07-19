@@ -39,3 +39,26 @@ npm install node-quickbooks
 2. It syncs to QBO every 6 hours
 3. Check QBO that it synced correctly
 4. Get paid
+
+## Mappings
+QBO Invoice Fields	-> Ohanafy Fields 	or	Ohanafy Fields	
+Customer->	Account.ohanafy__QuickBooks_Customer_ID__c			
+Customer email	-> Account.ohanafy__Billing_Contact_Email__c			
+BillAddr.Line1	->	Account.Name			
+BillAddr.Line2	->	Account.BillingAddress.street			
+BillAddr.City	->	Account.BillingAddress.city			
+BillAddr.Country	->	Account.BillingAddress.country			
+BillAddr.PostalCode	->	Account.BillingAddress.postalCode			
+BillAddr.CountrySubDivisionCode	->	Account.BillingAddress.state			
+Invoice date	->	Invoice.ohanafy__Invoice_Date__c			
+Due date	->	Invoice.ohanafy__Payment_Due_Date__c			
+Invoice no.	->	Invoice.Name			
+Product/Service	->	Invoice Item.ohanafy__QuickBooks_Item_ID__c	or	Invoice Fee.ohanafy__Accounting_System_ID__c	
+Description	->	Invoice Item.ohanafy__Item_Name__c	or	Invoice Fee.ohanafy__Fee_Name__c	
+QTY	->	Invoice Item.ohanafy__Quantity__c	or	1	
+Rate	->	Invoice Item.ohanafy__Sub_Total__c / Invoice Item.ohanafy__Quantity__c	or	Invoice Fee.ohanafy__Amount__c	
+Amount	->	Invoice Item.ohanafy__Sub_Total__c	or	Invoice Fee.ohanafy__Amount__c	
+Taxable	 if Invoice Item.ohanafy__Sales_Tax__c > 0			
+Class	->	Invoice Item.ohanafy__QuickBooks_Class_ID__c			
+Total Tax	->	sum(Invoice Item.ohanafy__Sales_Tax__c)			
+Total	->	Invoice.ohanafy__Total_Due__c			
