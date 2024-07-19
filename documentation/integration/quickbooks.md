@@ -25,3 +25,10 @@ Install the QuickBooks SDK for your programming language. For example, if you're
 
 ```bash
 npm install node-quickbooks
+
+## Step 3: Log into Ohanafy
+
+1. Go to salesforce.com
+2. login with your ohanafy credentials
+3. select mappings between ohanafy and qbo
+4. click confirm
