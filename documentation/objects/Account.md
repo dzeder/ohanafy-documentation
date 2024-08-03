@@ -1,8 +1,13 @@
 [object Object]
 
 Field Descriptions 
-* label: this is the api name of the field used in queries to reference = 
-* inlineHelpText: the description of what kind of data the field holds
+* label: this is the api name of the field used in queries to reference 
+* inlineHelpText: the description of what kind of data the field holds 
+* type: the data type the field holds 
+* relationshipName: this is what is used to query a join to the object in the referenceTo field 
+* picklistValues: if the field is a picklist these are the valid options 
+* referenceTo: this is the object the relationship refernces 
+
 
 label | inlineHelpText | type | relationshipName | picklistValues | referenceTo
 --- | --- | --- | --- | ---| ---
