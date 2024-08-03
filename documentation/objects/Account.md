@@ -1,6 +1,6 @@
 Account 
 
-The Account object holds information for customers, vendors and suppliers. It represents the companies you interact with. 
+The Account object holds information the companies you interact with. Pay attention to the type field when forming requests as it represnets what company type it is. Example if someone asks about customers, the where clause should have type = 'Customer'
 
 Field Descriptions 
 * label: this is the api name of the field used in queries to reference 
