@@ -1,4 +1,5 @@
 ohanafy__Invoice__c
+The ohanafy__Invoice__c or the Invoice object holds the invoices that your customer owes you or have already paid. 
 
 Field Descriptions 
 * label: this is the api name of the field used in queries to reference 
