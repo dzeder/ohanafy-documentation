@@ -1,3 +1,8 @@
+[object Object]
+
+Field Descriptions 
+*label: this is the api name of the field used in queries to reference = 
+*inlineHelpText: the description of what kind of data the field holds
 label | inlineHelpText | type | relationshipName | picklistValues | referenceTo
 --- | --- | --- | --- | ---| ---
 Id |  | Id |  |  | 
