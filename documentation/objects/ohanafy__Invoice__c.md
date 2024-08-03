@@ -1,4 +1,5 @@
-ohanafy__Invoice__c
+ohanafy__Invoice__c 
+
 The ohanafy__Invoice__c or the Invoice object holds the invoices that your customer owes you or have already paid. 
 
 Field Descriptions 
