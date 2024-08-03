@@ -1,4 +1,5 @@
 Account
+The Account object holds information for customers, vendors and suppliers. It represents the companies you interact with. 
 
 Field Descriptions 
 * label: this is the api name of the field used in queries to reference 
